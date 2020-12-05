@@ -88,4 +88,3 @@ crackAll :: Float -> String -> [(Int, String)]
 crackAll tol es = zip keys (map (\key -> (decode key es)) keys)
     where
         keys = crackKeys es tol
-
